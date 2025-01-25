@@ -2,7 +2,7 @@ import React from 'react'
 import x from"../assets/snap.png"
 import y from "../assets/logo.png"
 import  style from"./MainImage.module.css"
-import DownloadButton from '../Button/downloadButton'
+import DownloadButton from '../Button/DownloadButton'
 function MainImage() {
   return (
     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",paddingLeft:"1rem",paddingRight:"1rem"}}>
