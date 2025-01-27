@@ -22,7 +22,7 @@ function GenerateButton({loading,setLoading,content,tone,setResponse}) {
         if(loading)return;
         setLoading(true);
         try{
-            let c=await axios.post("https://snapreply-lb6t.onrender.com/api/generate",{content,"type":tone});
+            let c=await axios.post("https://snapreplybackend.onrender.com/api/generate",{content,"type":tone});
             if(c.status==500){
                 return new Error("Try After 1 minute!!!");
             }
