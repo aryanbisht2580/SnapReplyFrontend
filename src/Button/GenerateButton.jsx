@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useRef } from 'react'
+import { toast } from 'react-toastify';
 
 function GenerateButton({loading,setLoading,content,tone,setResponse}) {
 
@@ -28,6 +29,7 @@ function GenerateButton({loading,setLoading,content,tone,setResponse}) {
             }
             setResponse(c.data);
         }catch(error){
+            toast.success("Backend is Currrently Overloaded. Please try again later...");
             console.error("error occured");
         }
         setLoading(false);
