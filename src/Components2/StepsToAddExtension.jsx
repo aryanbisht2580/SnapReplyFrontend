@@ -131,7 +131,7 @@ const StepsToAddExtension = () => {
                       <img
                         src={step.screenshot}
                         alt={`Step ${index + 1} screenshot`}
-                        className="w-full h-100 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-40 md:h-100 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-lg flex items-center justify-center" />
                     </motion.div>

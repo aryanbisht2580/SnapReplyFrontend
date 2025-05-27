@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Sparkles } from 'lucide-react';
 import logox from '../assets/logox.png';
+import logoy from '../assets/logoy.png';
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Mail className="w-8 h-8" />
-          <img src={logox} alt="Logo" className="h-16" />
+          <img src={logoy} alt="Logo" className="h-20" />
           <motion.div
             animate={{ scale: [1, 1.2, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
